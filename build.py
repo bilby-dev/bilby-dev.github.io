@@ -142,7 +142,7 @@ def load_announcements(site, live):
                 print(f"warning: skipping release with unexpected tag or URL: {release['tag']!r}", file=sys.stderr)
                 continue
             version = html.escape(release["tag"].lstrip("v"))  # defence in depth: the body is rendered unescaped
-            body = (f"bilby {version} is out. Upgrade with `pip install -U bilby` or from conda-forge. "
+            body = (f"bilby {version} is out. Upgrade with `pip install bilby` or from conda-forge. "
                     f"[Read the release notes]({release['url']}).")
             items.append({
                 "title": f"bilby {version} released", "date": date, "link": release["url"],
