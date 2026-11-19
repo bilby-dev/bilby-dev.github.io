@@ -35,6 +35,7 @@ nav:
   - {label: Ecosystem, href: "#ecosystem"}
   - {label: News, href: "#news"}
   - {label: Community, href: "#community"}
+  - {label: Stats, href: "https://bilby-dev.github.io/repo_stats/"}
 
 features:
   - title: Any sampler, one interface
